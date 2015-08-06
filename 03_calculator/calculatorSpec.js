@@ -57,7 +57,7 @@ describe("Calculator", function() {
 			calculator.plus();
 	    expect(calculator.value()).toEqual(9);
 		});
-		
+
 		it("adds and subtracts", function() {
 			calculator.push(2);
 			calculator.push(3);
@@ -67,7 +67,7 @@ describe("Calculator", function() {
 			calculator.plus();
 	    expect(calculator.value()).toEqual(1);
 		});
-		
+
 		it("multiplies and divides", function() {
 			calculator.push(2);
 			calculator.push(3);
@@ -77,7 +77,7 @@ describe("Calculator", function() {
 			calculator.times();
 	    expect(calculator.value()).toEqual(1.5);
 		});
-		
+
 		it("fails informatively when there's not enough values stashed away", function() {
 			expect(function() {
 				calculator.plus();
@@ -95,7 +95,6 @@ describe("Calculator", function() {
 				calculator.divide();
 			}).toThrow("calculator is empty");
 		});
-		
+
 	});
-  
 });
